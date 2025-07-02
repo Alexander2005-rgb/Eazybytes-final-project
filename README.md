@@ -1,1 +1,1 @@
-# eveent-management
+# Eazybytes-final-project
