@@ -1,0 +1,103 @@
+@import '../styles/PageContainer.css';
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #3c6fa1, #1e3c72);
+  color: #f0f0f0;
+  padding: 40px 20px;
+  width: 100%;
+
+  
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.home-container p {
+  
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+  max-width: 600px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+}
+/* button  */
+.home-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.home-buttons button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0,123,255,0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-buttons button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 12px rgba(0,86,179,0.6);
+}
+
+.home-buttons button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0,123,255,0.7);
+}
+
+.recommendations-section {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  color: #fff;
+}
+
+.recommendations-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.recommendations-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container h1 {
+    font-size: 2.2rem;
+  }
+  .home-container p {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  .home-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .recommendations-section {
+    padding: 15px;
+  }
+}

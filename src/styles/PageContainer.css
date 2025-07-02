@@ -1,0 +1,22 @@
+/* Shared container styles for all pages */
+.page-container {
+  max-width: 900px;
+  margin: 80px auto 40px; /* top margin to account for navbar height */
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  min-height: calc(100vh - 120px); /* full viewport height minus navbar and bottom margin */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .page-container {
+    margin: 100px 15px 30px;
+    padding: 15px;
+    min-height: auto;
+  }
+}

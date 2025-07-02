@@ -1,0 +1,89 @@
+/* style the mybooking */
+
+.mybookings-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.booking-card {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.booking-card:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.booking-card h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.booking-card p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.payment-status {
+  font-weight: bold;
+}
+
+.payment-status.completed {
+  color: green;
+}
+
+.payment-status.failed {
+  color: red;
+}
+
+.notifications-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 5px 0 15px 0;
+  color: #444;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.payment-buttons button {
+  margin-right: 10px;
+}
+
+@media (max-width: 640px) {
+  .booking-card {
+    padding: 15px;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .payment-buttons button {
+    margin-right: 0;
+  }
+}
